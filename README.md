@@ -36,6 +36,12 @@ once you download it, you should add this information in the desired capabilitie
 ```
 
 
+run tests:
+
+```
+mvn test
+```
+
 Apk: https://drive.google.com/file/d/1mypWQWvqfVm5VM4hCPlkwzUkWjuTh5MS/view?usp=sharing
 
 

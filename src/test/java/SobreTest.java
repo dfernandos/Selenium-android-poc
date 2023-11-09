@@ -2,15 +2,15 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class AndroidTest {
+public class SobreTest {
 
     private static AppiumDriver driver;
 
@@ -34,8 +34,14 @@ public class AndroidTest {
     }
 
     @Test
-    public void testLogin() {
-        AndroidPageObject loginPage = new AndroidPageObject(driver);
-        loginPage.enterUsername();
+    public void sobreTest() {
+        SobrePageObject sobrePageObject = new SobrePageObject(driver);
+        String messageFromApp = sobrePageObject.validateSobreMessage();
+
+        System.out.println(messageFromApp);
+        Assertions.assertEquals(messageFromApp, "Daniel Oliveira\n" +
+                "\n" +
+                " PW3 \n" +
+                " 5 semestre");
     }
 }

@@ -1,10 +1,19 @@
 # Selenium-android-poc
 
 
-Install Android Studio to emulate the android app : https://developer.android.com/studio
 
-Install Node.js : https://nodejs.org/en/download
+Prerequisites:
 
+- Android Studio : https://developer.android.com/studio
+- Node: https://nodejs.org/en/download
+- Maven: https://maven.apache.org/download.cgi
+- https://www.oracle.com/br/java/technologies/downloads/
+
+Export enviroment variable ANDROID_HOME:
+
+```
+export ANDROID_HOME="path/to/your/Android/sdk"
+```
 
 install appium
 

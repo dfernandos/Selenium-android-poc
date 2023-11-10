@@ -1,6 +1,11 @@
 # Selenium-android-poc
 
 
+Install Android Studio to emulate the android app : https://developer.android.com/studio
+
+Install Node.js : https://nodejs.org/en/download
+
+
 install appium
 
 ```
